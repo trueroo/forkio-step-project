@@ -1,0 +1,7 @@
+node_modules
+package-lock.json
+.idea
+thumbs.db
+.vscode
+.sass-cache
+build

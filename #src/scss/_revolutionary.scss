@@ -1,0 +1,98 @@
+.revolutionary {
+  padding: 130px 0 120px;
+  @media (min-width: 481px) {
+    padding: 155px 0 160px;
+  }
+  @media (min-width: 993px) {
+    padding: 130px 0 70px;
+  }
+
+  &__title {
+    margin-bottom: 27px;
+    @include font(28, #635c73, 26, 700);
+    text-transform: uppercase;
+    text-align: center;
+    @media (min-width: 481px) {
+      margin-bottom: 33px;
+      @include font(42, #635c73, 42, 700);
+    }
+    @media (min-width: 993px) {
+      margin-bottom: 35px;
+      @include font(54, #635c73, 54, 700);
+    }
+  }
+
+  &__content {
+    margin-bottom: 36px;
+    @include font(20, $dark-text-color, 14);
+    text-align: center;
+    @media (min-width: 481px) {
+      margin-bottom: 24px;
+      @include font(32, $dark-text-color, 21);
+    }
+    @media (min-width: 993px) {
+      margin-bottom: 13px;
+    }
+  }
+}
+.github-counter {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  &__item {
+    &:hover .github-counter__link--graphic {
+      background-color: #a8b5c225;
+    }
+  }
+  &__item:first-child {
+    @media (max-width: 480px) {
+      margin-right: 10px;
+    }
+  }
+  &__item:not(:last-child) {
+    @media (max-width: 480px) {
+      margin-bottom: 20px;
+    }
+    @media (min-width: 481px) {
+      margin: 0 10px 0 0;
+    }
+  }
+  &__item:last-child {
+    @media (max-width: 480px) {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  &__link {
+    @include font(20, #24292e, 12, 500);
+    padding: 3px 12px;
+    border: 1px solid rgba(27, 31, 35, 0.15);
+    box-shadow: 0 1px 0 rgba(27, 31, 35, 0.04), inset 0 1px 0 rgba(255, 255, 255, 0.25);
+    vertical-align: middle;
+
+    &--graphic {
+      background-color: #fafbfc;
+      border-bottom-left-radius: 6px;
+      border-top-left-radius: 6px;
+      transition-property: background-color;
+      transition: 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+    }
+
+    &--counter {
+      font-weight: 600;
+      background-color: #fff;
+      border-bottom-right-radius: 6px;
+      border-top-right-radius: 6px;
+      border-left: 0;
+    }
+  }
+
+  &__svg {
+    display: inline-block;
+    vertical-align: text-top;
+    width: 16px;
+    height: 16px;
+  }
+}
