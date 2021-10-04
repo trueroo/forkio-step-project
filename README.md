@@ -1,6 +1,6 @@
 Landing with responsive.
 
-For 2 students. (make it solo)
+For 2 students. (made it solo)
 
 https://trueroo.github.io/forkio-github-pages/
 
